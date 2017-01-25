@@ -147,7 +147,7 @@ namespace LicensePlateRecognition {
             ShowImage(imageProcessing.Image);
 
             List<String> plates = imageProcessing.Plates;
-            String s = "License plate recognition finished. ";
+            String s = "License plate recognition finished in " + imageProcessing.ElapsedMilliseconds + " ms. ";
             switch (plates.Count) {
                 case 0:
                     s += "Nothing found.";

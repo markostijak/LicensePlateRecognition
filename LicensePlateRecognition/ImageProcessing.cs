@@ -32,7 +32,8 @@ namespace LicensePlateRecognition {
 
         private void InitializeTesseract() {
             ocr = new TesseractEngine(@"tessdata", "eng");
-            ocr.SetVariable("tessedit_char_whitelist", "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
+            ocr.SetVariable("tessedit_char_whitelist", "ABCDEFGHIJKLMNOPRSTUVW0123456789");
+            //ocr.SetVariable("tessedit_char_whitelist", "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
         }
 
         // filtri
@@ -149,7 +150,6 @@ namespace LicensePlateRecognition {
             plateBlobsFiltering.ApplyInPlace(plate);
             plateBlobCounter.ProcessImage(plate);
             Blob[] blobs = plateBlobCounter.GetObjectsInformation();
-            // todo ocr by chars for speed improvements
             int chars = blobs.Length;
             return 5 <= chars && chars <= 9;
         }
@@ -160,6 +160,8 @@ namespace LicensePlateRecognition {
                 if (String.IsNullOrEmpty(text)) return false;
                 text = text.Replace(" ", "-");
                 text = text.Trim();
+                if (text.Length > 9)
+                    text = text.Substring(1, text.Length - 1);
                 if (text.Length >= 9)
                     return true;
 

@@ -157,56 +157,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="plates\10386912_10153471134343532_6810894709613931384_o.jpg" />
-    <Resource Include="plates\1Dino.jpg" />
-    <Resource Include="plates\1f71mt.jpg" />
-    <Resource Include="plates\1Mihajlo.jpg" />
-    <Resource Include="plates\audia6front.jpeg" />
-    <Resource Include="plates\io13f8.jpg" />
-    <Resource Include="plates\move_over.jpg" />
-    <Resource Include="plates\slika-1036871-5825f24ec1852-velika.jpg" />
-    <Resource Include="plates\slika-1036871-5825f56318cba-velika.jpg" />
-    <Resource Include="plates\slika-110336-57cea467e5a6e-velika.jpg" />
-    <Resource Include="plates\slika-110336-57cea4a511d56-velika.jpg" />
-    <Resource Include="plates\slika-110336-57cea4b234a88-velika.jpg" />
-    <Resource Include="plates\slika-110336-582b58f06e492-velika.jpg" />
-    <Resource Include="plates\slika-1124995-582e3a5669bf0-velika.jpg" />
-    <Resource Include="plates\slika-1124995-582e3aac9b399-velika.jpg" />
-    <Resource Include="plates\slika-1262166-582ebd6be66c2-velika.jpg" />
-    <Resource Include="plates\slika-1262166-582ebd7b3431c-velika.jpg" />
-    <Resource Include="plates\slika-1373304-581e5c493dc26-velika.jpg" />
-    <Resource Include="plates\slika-1373304-582d913d7dfb0-velika.jpg" />
-    <Resource Include="plates\slika-1414814-582b79053d1ec-velika.jpg" />
-    <Resource Include="plates\slika-1443714-582f74a60ad89-velika.jpg" />
-    <Resource Include="plates\slika-1522987-58297e3c77057-velika.jpg" />
-    <Resource Include="plates\slika-1522987-58297e4a8a691-velika.jpg" />
-    <Resource Include="plates\slika-1522987-58297e57ecdc7-velika.jpg" />
-    <Resource Include="plates\slika-1522987-58297e6c699f5-velika.jpg" />
-    <Resource Include="plates\slika-1538170-581235fd30802-velika.jpg" />
-    <Resource Include="plates\slika-1539481-5814ec19a8bdf-velika.jpg" />
-    <Resource Include="plates\slika-1539481-5814ede883d12-velika.jpg" />
-    <Resource Include="plates\slika-175618-57aa5a361ff79-velika.jpg" />
-    <Resource Include="plates\slika-17704-582df52952bc7-velika.jpg" />
-    <Resource Include="plates\slika-290440-582d9e26ce255-velika.jpg" />
-    <Resource Include="plates\slika-290440-582d9e465af2a-velika.jpg" />
-    <Resource Include="plates\slika-294408-581e03451034e-velika.jpg" />
-    <Resource Include="plates\slika-294408-581e034df3472-velika.jpg" />
-    <Resource Include="plates\slika-304635-582c9eeeb19dc-velika.jpg" />
-    <Resource Include="plates\slika-304635-582c9efa1d337-velika.jpg" />
-    <Resource Include="plates\slika-304635-582c9f33b4110-velika.jpg" />
-    <Resource Include="plates\slika-304635-582c9f4c5c3c4-velika.jpg" />
-    <Resource Include="plates\slika-331105-57ff382c4ee94-velika.jpg" />
-    <Resource Include="plates\slika-331105-57ff382ee5f3e-velika.jpg" />
-    <Resource Include="plates\slika-352484-58186613c0243-velika.jpg" />
-    <Resource Include="plates\slika-449294-57ffad10c128e-velika.jpg" />
-    <Resource Include="plates\slika-449294-57ffad3f2840b-velika.jpg" />
-    <Resource Include="plates\slika-648264-582c5efa24a6c-velika.jpg" />
-    <Resource Include="plates\slika-73510-582f028f78433-velika.jpg" />
-    <Resource Include="plates\slika-73510-582f02902da7e-velika.jpg" />
-    <Resource Include="plates\slika-73510-582f029976759-velika.jpg" />
-    <Resource Include="plates\slika-9440-57f0214926bac-velika.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="icons\open.png" />
     <Resource Include="icons\image.png" />
     <Resource Include="icons\drop.png" />
