@@ -32,7 +32,7 @@ namespace LicensePlateRecognition {
 
         private void InitializeTesseract() {
             ocr = new TesseractEngine(@"tessdata", "eng");
-            ocr.SetVariable("tessedit_char_whitelist", "ABCDEFGHIJKLMNOPRSTUVW0123456789");
+            ocr.SetVariable("tessedit_char_whitelist", "ABCEFGHJKLMNOPRSTUVW0123456789");
             //ocr.SetVariable("tessedit_char_whitelist", "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
         }
 
