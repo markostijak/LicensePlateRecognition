@@ -13,6 +13,7 @@ using Accord.Imaging.Filters;
 using Accord.Math.Geometry;
 using Tesseract;
 using Image = System.Drawing.Image;
+using ImageFormat = System.Drawing.Imaging.ImageFormat;
 using Point = Accord.Point;
 
 namespace LicensePlateRecognition {
@@ -92,20 +93,21 @@ namespace LicensePlateRecognition {
             originalImage = image;
             process();
         }
-
+        
         private void process() {
             stopwatch.Reset();
             stopwatch.Start();
             plates = new List<string>();
             frame = contrastCorrectionFilter.Apply(originalImage);
             frame = grayscaleFilter.Apply(frame);
-
             BitmapData frameData = frame.LockBits(new Rectangle(0, 0, frame.Width, frame.Height), ImageLockMode.ReadWrite, frame.PixelFormat);
             UnmanagedImage data = new UnmanagedImage(frameData);
 
             bradleyLocalFilter.ApplyInPlace(data);
             fillHoles.ApplyInPlace(data);
             openingFilter.ApplyInPlace(data);
+
+            new BlobsFiltering(50, 10, 520, 110).ApplyInPlace(data);
 
             blobCounter.ProcessImage(data);
 
@@ -162,7 +164,7 @@ namespace LicensePlateRecognition {
                 text = text.Trim();
                 if (text.Length > 9)
                     text = text.Substring(1, text.Length - 1);
-                if (text.Length >= 9)
+                if (text.Length >= 8 && text.Length <= 10)
                     return true;
 
                 return false;
